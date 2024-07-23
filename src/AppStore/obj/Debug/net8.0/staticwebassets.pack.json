@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\aspnet\\src\\AppStore\\wwwroot\\css\\form.css",
+      "PackagePath": "staticwebassets\\css\\form.css"
+    },
+    {
+      "Id": "C:\\aspnet\\src\\AppStore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AppStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AppStore.props",
+      "PackagePath": "build\\AppStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AppStore.props",
+      "PackagePath": "buildMultiTargeting\\AppStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AppStore.props",
+      "PackagePath": "buildTransitive\\AppStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

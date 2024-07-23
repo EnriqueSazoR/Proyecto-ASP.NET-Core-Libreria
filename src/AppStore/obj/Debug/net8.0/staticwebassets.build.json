@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "01SxOtbnblhml4GZcPuxqZ9UBs+1w8EVaf3d+5Ker4g=",
+  "Source": "AppStore",
+  "BasePath": "_content/AppStore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AppStore\\wwwroot",
+      "Source": "AppStore",
+      "ContentRoot": "C:\\aspnet\\src\\AppStore\\wwwroot\\",
+      "BasePath": "_content/AppStore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\aspnet\\src\\AppStore\\wwwroot\\css\\form.css",
+      "SourceId": "AppStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\aspnet\\src\\AppStore\\wwwroot\\",
+      "BasePath": "_content/AppStore",
+      "RelativePath": "css/form.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\form.css"
+    },
+    {
+      "Identity": "C:\\aspnet\\src\\AppStore\\wwwroot\\css\\style.css",
+      "SourceId": "AppStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\aspnet\\src\\AppStore\\wwwroot\\",
+      "BasePath": "_content/AppStore",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
