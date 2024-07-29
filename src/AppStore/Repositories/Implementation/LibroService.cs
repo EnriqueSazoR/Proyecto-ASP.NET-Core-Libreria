@@ -71,7 +71,7 @@ public class LibroService : ILibroService
     }
 
     // metodo para crear paginación
-    public LibroListvm List(string term = "", bool paging = false, int currentPage = 1)
+    public LibroListvm List(string term = "", bool paging = false, int currentPage = 0)
     {
         var data = new LibroListvm();
         var list = ctx.Libros.ToList();

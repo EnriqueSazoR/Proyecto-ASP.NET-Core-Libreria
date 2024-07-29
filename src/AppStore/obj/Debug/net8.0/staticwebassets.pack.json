@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\aspnet\\src\\AppStore\\wwwroot\\Upload\\harry.jpg",
+      "PackagePath": "staticwebassets\\Upload\\harry.jpg"
+    },
+    {
+      "Id": "C:\\aspnet\\src\\AppStore\\wwwroot\\Upload\\quijote.jpg",
+      "PackagePath": "staticwebassets\\Upload\\quijote.jpg"
+    },
+    {
       "Id": "C:\\aspnet\\src\\AppStore\\wwwroot\\css\\form.css",
       "PackagePath": "staticwebassets\\css\\form.css"
     },

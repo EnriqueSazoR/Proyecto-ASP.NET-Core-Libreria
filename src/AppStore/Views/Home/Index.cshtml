@@ -1,3 +1,4 @@
+@model AppStore.Models.DTO.LibroListvm
 @{
     Layout = "_Layout";
 }
@@ -9,138 +10,28 @@
          </form>
         </section>
 
+
+
         <section class="movies">
 
-           <div class="movie-card"onclick="window.location.href='/movie-detail.html'" >
+          @foreach(var libro in Model.LibroList!)
+          {
+            <div class="movie-card"onclick="window.location.href='/Home/LibroDetail?libroId=@libro.Id'" >
             <div class="movie-image">
-            <img src="https://picsum.photos/id/24/200/300">
+            <img src="/Upload/@libro.Imagen" width="200" height="300">
             </div>
             <div class="movie-info">
-                <h4>La Catedral</h4>
-                <h4>Programacion, Develop</h4>
-                <h4>Mario Vargas Llosa </h4>
+                <h4>@libro.Titulo</h4>
+                <h4>@libro.CategoriasNames</h4>
+                <h4>@libro.CreateDate</h4>
             </div>
            </div>
+          }
 
-           <div class="movie-card" >
-            <div class="movie-image">
-            <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>La Programacion Final</h4>
-                <h4>Devops</h4>
-                <h4>Garcia Marquez </h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-            <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>Curso de C#</h4>
-                <h4>Programacion Basica-Avanzada</h4>
-                <h4>Vaxi Drez</h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">>
-            </div>
-            <div class="movie-info">
-                <h4>Curso de Java</h4>
-                <h4>Programacion Desktop</h4>
-                <h4>Nestor Arcila</h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>Fundamentos de Algoritmos</h4>
-                <h4>Fundamentos</h4>
-                <h4>Yojanes </h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>Pascal</h4>
-                <h4>Fundamentos</h4>
-                <h4>Roberto Cabanas </h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>Oracle Database</h4>
-                <h4>Database</h4>
-                <h4>Juan Sanchez </h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>MySql Database</h4>
-                <h4>Database</h4>
-                <h4>Rolando Brena</h4> 
-            </div>
-           </div>
-
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-                <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>Functions Azure</h4>
-                <h4>Programacion</h4>
-                <h4>Nestor Arcila </h4>
-            </div>
-           </div>
-
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>AWS Programacion</h4>
-                <h4>Programacion</h4>
-                <h4>Maria Angeles </h4>
-            </div>
-           </div>
-
-           <div class="movie-card" >
-            <div class="movie-image">
-              <img src="https://picsum.photos/id/24/200/300">
-            </div>
-            <div class="movie-info">
-                <h4>Postgresql Database</h4>
-                <h4>Database</h4>
-                <h4>Bea Rodriguez </h4>
-            </div>
-           </div>
         </section>
+
+
+
 
         <div class="pagination">
           <a href="#">&laquo;</a>

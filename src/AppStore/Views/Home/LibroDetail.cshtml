@@ -1,0 +1,22 @@
+@model AppStore.Models.Domain.Libro;
+
+@{
+
+}
+
+<div class="movie-detail w-80 m-auto">
+    <div class="img-container">
+        <img alt="portada libro" src="/Upload/@Model.Imagen">
+    </div>
+
+    <div class="detail-container">
+        <h3>@Model.Titulo</h3>
+        <h4>@Model.CategoriasNames</h4>
+        <h4>@Model.CreateDate</h4>
+        <h4>@Model.Autor</h4>
+    </div>
+
+    <div class="w-80 m-auto">
+        <a href="/Home/Index" class="btn btn-default">Atras</a>
+    </div>
+</div>
