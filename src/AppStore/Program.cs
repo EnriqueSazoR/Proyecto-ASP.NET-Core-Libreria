@@ -11,6 +11,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ILibroService, LibroService>();
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+
 
 builder.Services.AddDbContext<DataBaseContext> (opt =>{
     opt.LogTo(Console.WriteLine, new []{

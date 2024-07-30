@@ -1,0 +1,71 @@
+@model AppStore.Models.Domain.Libro
+@{
+
+}
+
+<form class="w-40" asp-action="Add" method="post" enctype="multipart/form-data">
+
+    <h2>Agregar Libro</h2>
+    <div class="input-container">
+        <label asp-for="Titulo" class="w-40">Titulo</label>
+        <input type="text" class="input" asp-for="Titulo">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Titulo"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Autor" class="w-40">Autor</label>
+        <input type="text" class="input" asp-for="Autor">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Autor"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="ImageFile" class="w-40">Imagen</label>
+        <input type="file" class="input" asp-for="ImageFile">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="ImageFile"></span>
+    </div>
+
+    
+    <div class="input-container">
+        <label asp-for="Categorias" class="w-40">Categorias</label>
+        <select asp-items="Model.CategoriasList" class="input" asp-for="Categorias" multiple>
+            <option value="">--Seleccionar--</option>
+        </select>
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Categorias"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="CreateDate" class="w-40">Fecha Publicacion</label>
+        <input type="text" class="input" asp-for="CreateDate">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="CreateDate"></span>
+    </div>
+
+
+    @if(TempData["msg"]!=null)
+    {
+        <div class="alert-mb1">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="input-container">
+        <button class="btn btn-default">Guardar</button>
+        <a class="btn btn-sec" href="/Libro/LibroList">Ver Todo</a>
+    </div>
+
+
+
+
+
+
+</form>
+
