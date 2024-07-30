@@ -22,7 +22,7 @@ public class LoadDatabase
                 UserName = "Lsazor"
             };
 
-           await usuarioManager.CreateAsync(usuario, "PasswordLuis123$");
+           await usuarioManager.CreateAsync(usuario, "PasswordLuisEnr123$");
            await usuarioManager.AddToRoleAsync(usuario, "ADMIN");
         }
 

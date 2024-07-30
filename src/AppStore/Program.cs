@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ILibroService, LibroService>();
-
+builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
 
 builder.Services.AddDbContext<DataBaseContext> (opt =>{
     opt.LogTo(Console.WriteLine, new []{
