@@ -4,14 +4,10 @@ using AppStore.Repositories.Abstract;
 namespace AppStore.Repositories.Implementation;
 
 // clase para implementar interfaz ILibro
-public class LibroService : ILibroService
+public class LibroService(DataBaseContext ctxParameter) : ILibroService
 {
 
-    private readonly DataBaseContext ctx;
-    public LibroService(DataBaseContext ctxParameter)
-    {
-        ctx = ctxParameter;
-    }
+    private readonly DataBaseContext ctx = ctxParameter;
 
     // Metodo para agregar un nuevo libro
     public bool Add(Libro libro)
@@ -78,7 +74,7 @@ public class LibroService : ILibroService
         if(!string.IsNullOrEmpty(term))
         {
             term = term.ToLower();
-            list = list.Where(a => a.Titulo!.ToLower().StartsWith(term)).ToList();
+            list = list.Where(a => a.Titulo!.StartsWith(term, StringComparison.CurrentCultureIgnoreCase)).ToList();
         }
 
         if(paging)

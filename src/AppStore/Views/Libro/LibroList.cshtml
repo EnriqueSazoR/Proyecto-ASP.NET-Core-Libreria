@@ -1,0 +1,44 @@
+@model AppStore.Models.DTO.LibroListvm
+@{
+
+}
+
+<div class="tbl-container">
+    <h2>Administracion de Libros</h2>
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Categoria</th>
+            <th>Fecha de Publicacion</th>
+            <th>Imagen</th>
+            <th>Autor</th>
+            <th>Accion</th>
+        </tr>
+
+        @foreach(var item in Model.LibroList!)
+        {
+            <tr>
+                <td>@item.Titulo</td>
+                <td>@item.CategoriasNames</td>
+                <td>@item.CreateDate</td>
+                <td><img style="height:60px; width:80px;" src="/Upload/@item.Imagen"/></td>
+                <td>@item.Autor</td>
+                <td>
+                    <a href="/Libro/Edit?id=@item.Id" class="btn btn-default">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    <a href="/Libro/Delete?id=@item.Id" onclick="return window.confirm('¿Estas seguro de eliminar el libro?')" class="btn btn-danger">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+        
+    </table>
+
+    <div class="input-container">
+        <a href="/Libro/Add" class="btn btn-sec">Atras</a>
+
+    </div>
+
+</div>
